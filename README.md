@@ -1,3 +1,15 @@
+### What is this?
+A small demo on kafka consumer & producer in Python -
+1. Orchestrator 
+    - Delete a topic
+    - Create a topic
+    - Retrieve all topics
+2. Producer
+    - Send a message to a topic
+5. Consumer
+    - Subscribe to a topic
+    - Retrieve messages from a topic; uses group_id to maintain offset for each consumer.
+
 ### Pre-requisites
 1. Java
 2. Python
