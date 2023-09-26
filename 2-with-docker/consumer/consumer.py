@@ -1,4 +1,4 @@
-from constants import *
+
 
 import json
 
@@ -6,6 +6,9 @@ from kafka import KafkaConsumer
 
 CLIENT_ID = 'client-consumer-1'
 GROUP_ID = 'group-consumer-1'
+
+TOPIC_NAME = 'topic-test1'
+BROKER_LIST = ['localhost:9092']
 
 def consumer():
 

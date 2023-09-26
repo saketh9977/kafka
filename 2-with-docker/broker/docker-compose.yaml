@@ -1,5 +1,9 @@
----
-version: '3'
+version: '3.9'
+
+networks:
+  test_network:    
+    external: true
+
 services:
   broker:
     image: confluentinc/cp-kafka:7.5.0
@@ -22,3 +26,5 @@ services:
       KAFKA_CONTROLLER_LISTENER_NAMES: CONTROLLER
       KAFKA_LOG_DIRS: /tmp/kraft-combined-logs
       CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
+    networks:
+      - test_network
