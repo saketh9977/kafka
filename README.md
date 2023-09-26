@@ -25,7 +25,7 @@ bash build_image.sh
 bash run_container.sh
 ```
 
-5. Ensure proceser sent a message -
+5. Ensure producer sent a message -
 ```
 docker logs kafka-producer-c
 ```
