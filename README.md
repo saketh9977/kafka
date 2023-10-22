@@ -1,6 +1,9 @@
+### What is This?
 A simple PoC on Kafka broker (containerized), producer (containerized), consumer (on host machine) setup, communication etc.
 
-### `./2-with-docker`
+### Setup/Testing
+
+The following steps are for scripts located in `./1-with-docker` folder -
 
 1. Create a docker network so that producer container can communicate with broker container using broker's container name -
 ```
@@ -35,3 +38,5 @@ docker logs kafka-producer-c
 cd ../consumer
 python consumer.py
 ```
+
+Refer `README.md` present in `2-without-docker` for steps without docker
